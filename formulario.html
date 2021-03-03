@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <base href="/">
+    <link rel="stylesheet" type="text/css" href="/public/style.css">
+    <script src = index.js></script>
+</head>
+<body>
+    <header>
+    <h1>Formulario de Inscripción de Alumnos</h1>
+    </header>
+    <div class="dato">
+    <form class="datos" method="POST" action="/formulario">
+        <label>Ingrese su Nombre:</label><br>
+        <input type="text" name="nombre" required placeholder="pedro"><br> 
+        <label>Ingrese su Apellido:</label><br>
+        <input type="text" name="apellido" placeholder="perez" ><br>
+        <label for>Edad:</label><br>
+        <input type="number" name="edad" placeholder="25"><br>
+        <label>Teléfono:</label><br>
+        <input type="phone" name="telefono" placeholder="11-1234-5678"><br>
+        <label>DNI:</label><br>
+        <input type="number" name="dni" placeholder="33.800.900"><br>
+        <label>Pais de Nacimiento</label></br>
+        <input type="country" name="pais" placeholder="argentina"><br>
+        <label>Fecha de Nacimiento</label></br>
+        <input type="date" name="fechanac" placeholder="1991-02-01"><br>
+       
+       <!-- <input type="button" onclick="alert('Gracias por ingresar sus Datos')" value="Enviar"> -->
+      
+    </br>
+    
+        <input type="submit" id="Enviar" name="Enviar"> 
+    </form>
+</div>
+
+</body>
+</html>
